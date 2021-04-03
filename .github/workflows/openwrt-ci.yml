@@ -122,12 +122,12 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
           # CONFIG_XRAY_CORE_COMPRESS_GOPROXY is not set
           CONFIG_PACKAGE_luci-app-ttyd=y
-          CONFIG_PACKAGE_luci-app-unblockmusic=y
-          CONFIG_UnblockNeteaseMusic_Go=y
+          # CONFIG_PACKAGE_luci-app-unblockmusic=y
+          # CONFIG_UnblockNeteaseMusic_Go=y
           # CONFIG_UnblockNeteaseMusicGo_INCLUDE_GOPROXY is not set
-          CONFIG_UnblockNeteaseMusic_NodeJS=y
-          CONFIG_PACKAGE_luci-app-usb-printer=y
-          CONFIG_PACKAGE_luci-app-uugamebooster=y
+          # CONFIG_UnblockNeteaseMusic_NodeJS=y
+          # CONFIG_PACKAGE_luci-app-usb-printer=y
+          # CONFIG_PACKAGE_luci-app-uugamebooster=y
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wireguard=y
@@ -153,7 +153,7 @@ jobs:
           CONFIG_PACKAGE_zoneinfo-poles=y
           CONFIG_PACKAGE_zoneinfo-simple=y
           CONFIG_PACKAGE_zoneinfo-southamerica=y
-          CONFIG_KERNEL_BUILD_USER="KFERMercer"
+          CONFIG_KERNEL_BUILD_USER="Sun"
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
           # CONFIG_TARGET_IMAGES_PAD is not set
           # CONFIG_VMDK_IMAGES is not set
