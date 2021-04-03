@@ -13,7 +13,7 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
->>>>>>> f5a9e4418be206d42455c24ec521daf1f70a3417
+
 name: OpenWrt-CI
 
 on:
