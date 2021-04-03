@@ -13,21 +13,22 @@
 
 name: OpenWrt-CI
 
-on:
-  push:
-    branches: 
-      - master
-   schedule:
-     - cron: 0 20 * * *
+on: 
   release:
     types: [published]
 
+  push:
+    branches: 
+      - master
+
+  schedule:
+    - cron: 0 8 * * 5
+  
+  watch:
+    types: [started]
+
 jobs:
-
-  build_openwrt:
-
-    name: Build OpenWrt firmware
-
+  build:
     runs-on: ubuntu-latest
 
     if: github.event.repository.owner.id == github.event.sender.id
@@ -77,6 +78,7 @@ jobs:
           # 例如:
 
           cat >> .config <<EOF
+          CONFIG_TARGET_x86=y
           CONFIG_TARGET_x86_64=y
           CONFIG_TARGET_x86_64_Generic=y
           CONFIG_TARGET_IMAGES_GZIP=y
